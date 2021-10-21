@@ -1,4 +1,6 @@
-void sebas(){
+void sebas(float posx, float posy){
+  push();
+  translate(posx,posy);
   //cara
   line(m,m*4,m,m*8);
   line(m,m*8,m*3,m*10);
@@ -49,4 +51,6 @@ void sebas(){
   triangle(m*7,m,m*9,m,m*9,m*4);
   triangle(m*5,m*2,m*7,m*2,m*6,0);
   triangle(m*7,m*3,m*8,m,m*7,0); 
+  
+ pop();
 }
